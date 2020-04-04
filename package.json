@@ -1,6 +1,6 @@
 {
   "name": "hygen-dckit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hygen generators for DCKit monorepos",
   "repository": "git@github.com:DCKit/hygen-generators.git",
   "author": "Eugene Samonenko <ambroseus@gmail.com>",

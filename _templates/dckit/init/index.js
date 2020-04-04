@@ -6,8 +6,7 @@ module.exports = {
     return prompter.prompt({
       type: 'input',
       name: 'name',
-      message: 'repo folder (default .):',
-      result: name => name || '.'
+      message: 'repo name:'
     })
   }
 }

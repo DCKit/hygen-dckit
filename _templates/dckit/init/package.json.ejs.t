@@ -1,8 +1,14 @@
 ---
-to: <%= name %>/package.json
-unless_exists: true
+to: package.json
 ---
 {
+  "name": "<%= name || cwd.split('/').pop() %>",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
     "lint": "FORCE_COLOR=true lerna run lint --stream",
     "lint:fix": "FORCE_COLOR=true lerna run lint:fix --stream",
@@ -10,7 +16,6 @@ unless_exists: true
     "build": "FORCE_COLOR=true lerna run build --stream --concurrency 1"
   },
   "devDependencies": {
-    "lerna": "3.20.2",
-    "husky": "4.0.6"
+    "lerna": "3.20.2"
   }
 }

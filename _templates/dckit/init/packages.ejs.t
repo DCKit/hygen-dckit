@@ -1,8 +1,7 @@
 ---
-to: <%= name %>/packages/README.md
-unless_exists: true
+to: packages/README.md
 ---
 # monorepo packages
 
-## add app: hygen mr app
-## add common: hygen mr common
+## add app: hygen dckit app
+## add common: hygen dckit common

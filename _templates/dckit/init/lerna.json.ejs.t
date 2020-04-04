@@ -1,9 +1,9 @@
 ---
-to: <%= name %>/lerna.json
-unless_exists: true
+to: lerna.json
 ---
 {
-  "lerna": "3.20.2",
   "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
   "version": "1.0.0"
 }
