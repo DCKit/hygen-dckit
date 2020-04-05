@@ -1,7 +1,7 @@
 ---
 inject: true
 to: src/react-app-env.d.ts
-after: reference,
+after: reference
 skip_if: <%= name %>
 ---
 declare module '<%= name %>'
