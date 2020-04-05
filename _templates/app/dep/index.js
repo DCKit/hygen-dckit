@@ -1,4 +1,6 @@
-const { inputName } = require('../../util') 
+const { inputName, checkParentDir } = require('../../util')
+
+checkParentDir()
 
 module.exports = {
   prompt: inputName('shared folder')
