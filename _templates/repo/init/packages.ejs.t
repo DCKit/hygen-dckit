@@ -3,8 +3,26 @@ to: packages/README.md
 ---
 # monorepo packages
 
-add app: hygen app add {app-folder}
+## add new **app**
 
-add shared lib: hygen shared add {shared-folder}
+- _cd `<root>`/packages_
 
-add shared dependency: cd {app-folder} && hygen app dep {shared-folder}
+> hygen **app add** _`app-folder`_
+
+---
+
+## inject **shared** dependency into **app** package
+
+- _cd `<root>`/packages/`<app-folder>`_
+
+> hygen **app dep** _`shared-folder`_
+
+---
+
+## inject **lib** dependency into **app** package
+
+- _cd `<root>`/packages/`<app-folder>`_
+
+> hygen **app dep:lib** _`lib-folder`_
+
+---
