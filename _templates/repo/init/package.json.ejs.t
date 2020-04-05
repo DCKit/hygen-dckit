@@ -2,7 +2,7 @@
 to: package.json
 ---
 {
-  "name": "<%= name || cwd.split('/').pop() %>",
+  "name": "<%= cwd.split('/').pop() %>",
   "private": true,
   "workspaces": {
     "packages": [
